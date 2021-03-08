@@ -20,3 +20,5 @@ Potential Resources:
 - SEO Hall of Fame?
 - In Memoriam Profiles?
 - and more!
+- SEO tools?
+- SEO meet-ups?
