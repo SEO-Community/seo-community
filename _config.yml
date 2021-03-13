@@ -4,5 +4,10 @@ url: https://seo-community.org
 permalink: /articles/:title
 plugins:
   - jekyll-redirect-from
+collections:
+  conference:
+    output: true
+    permalink: /conferences/:path
+collections_dir: my_collections
 sass:
     style: compressed

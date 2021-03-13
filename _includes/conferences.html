@@ -10,20 +10,12 @@
 		</div>
 	</div>
 	<div class="eight columns">
-		<ul>
-                  <li><a href="https://www.advancedsearchsummit.com/">Advanced Search Summit</a></li>
-                  <li><a href="https://www.brightonseo.com/">brightonSEO</a></li>
-                  <li><a href="https://c3.conductor.com/">C3</a></li>
-                  <li><a href="https://www.sempdx.org/engage/">Engage</a></li>
-                  <li><a href="https://www.inbound.com/">INBOUND</a></li>
-                  <li><a href="https://moz.com/mozcon">MozCon</a></li>
-                  <li><a href="https://www.pubcon.com/">Pubcon</a></li>
-                  <li><a href="https://www.distilled.net/events/">SearchLove</a></li>
-                  <li><a href="https://marketinglandevents.com/smx/">SMX</a></li>
-                  <li><a href="https://www.stateofsearch.org/">State of Search</a></li>
-                  <li><a href="https://www.catalystdigital.com/techseoboost/">TechSEO Boost</a></li>
-                  <li><a href="https://www.ungagged.com/">UnGagged</a></li>
-                  <li><a href="https://www.womenintechseo.com/conference/">WTSFest</a></li>
-		</ul>
+        {% for conference in site.collections %}
+        <li>
+            <a href="{{ conference.link }}">
+                {{ conference.title }}
+            </a>
+        </li>
+        {% endfor %}  
 	</div>
 </div>
