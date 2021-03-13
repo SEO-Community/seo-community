@@ -8,6 +8,5 @@ collections:
   conferences:
     output: true
     permalink: /conferences/:path
-collections_dir: my_collections
 sass:
     style: compressed
