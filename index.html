@@ -52,7 +52,31 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 
 {% include newsletters.html %}
 
-{% include organizations.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2>Local Organizations</h2>
+			<div class="subhead">
+				<p>Gatherings and groups to exchange ideas</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+		<ul>
+			{% for organization in site.organizations %}
+				<li>
+					<a href="{{ organization.link }}">
+						{{ organization.title }}
+					</a>: 
+					{{ organization.description }}
+				</li>
+			{% endfor %}  
+		</ul>
+	</div>
+</div>
+
 
 <hr>
 
@@ -78,7 +102,25 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 	</div>
 </div>
 
-{% include articles.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2><a href="/articles/">Articles</a></h2>
+			<div class="subhead">
+				<p>Articles from the community</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
 
 <hr>
 
