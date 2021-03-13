@@ -1,0 +1,19 @@
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2><a href="/articles/">Articles</a></h2>
+			<div class="subhead">
+				<p>Articles from the community</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

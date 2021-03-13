@@ -50,7 +50,30 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 	</div>
 </div>
 
-{% include newsletters.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2>Newsletters</h2>
+			<div class="subhead">
+				<p>Get the latest in your inbox</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+		<ul>
+			{% for newsletter in site.newsletters %}
+				<li>
+					<a href="{{ newsletter.link }}">
+						{{ newsletter.title }}
+					</a>: 
+					{{ newsletter.description }}
+				</li>
+			{% endfor %}  
+		</ul>
+	</div>
+</div>
 
 <hr>
 
@@ -76,7 +99,6 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 		</ul>
 	</div>
 </div>
-
 
 <hr>
 
@@ -107,26 +129,6 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 <div class="row">
 	<div class="four columns">
 		<div class="row">
-			<h2><a href="/articles/">Articles</a></h2>
-			<div class="subhead">
-				<p>Articles from the community</p>
-			</div>
-		</div>
-	</div>
-	<div class="eight columns">
-		<ul class="posts">
-			{% for post in site.posts %}
-			<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-</div>
-
-<hr>
-
-<div class="row">
-	<div class="four columns">
-		<div class="row">
 			<h2>Conferences</h2>
 			<div class="subhead">
 				<p>Learn, network, speak, and more</p>
@@ -145,3 +147,5 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 		</ul>
 	</div>
 </div>
+
+{% include articles.html %}
