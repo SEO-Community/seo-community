@@ -8,5 +8,23 @@ collections:
   conferences:
     output: true
     permalink: /conferences/:path
+  consultants:
+    output: true
+    permalink: /consultants/:path
+  organizations:
+    output: true
+    permalink: /organizations/:path
+  publications:
+    output: true
+    permalink: /publications/:path
+  newsletters:
+    output: true
+    permalink: /newsletters/:path
+  resources:
+    output: true
+    permalink: /resources/:path
+  tools:
+    output: true
+    permalink: /tools/:path
 sass:
     style: compressed

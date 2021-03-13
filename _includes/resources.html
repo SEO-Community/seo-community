@@ -10,12 +10,14 @@
 		</div>
 	</div>
 	<div class="eight columns">
-		<ul>
-            <li><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide">Google's Search Engine Optimization (SEO) Starter Guide</a></li>
-	    <li><a href="https://learningseo.io/">Aleyda's Learning SEO, A Roadmap with Free Resources</a></li>
-            <li><a href="https://moz.com/beginners-guide-to-seo">Moz's The Beginner's Guide to SEO</a></li>
-	    <li><a href="https://moz.com/blog/the-technical-seo-renaissance">The Technical SEO Renaissance</a></li>
-            <li><a href="https://backlinko.com/learn-seo-fast">Backlinko's How to Learn SEO In 2021, In Record Time</a></li>
+        <ul>
+			{% for resource in site.resources %}
+				<li>
+					<a href="{{ resource.link }}">
+						{{ resource.title }}
+					</a>
+				</li>
+			{% endfor %}  
 		</ul>
 	</div>
 </div>

@@ -26,14 +26,80 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
     </div>
 </div>
 
-{% include publications.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2>Media Publications</h2>
+			<div class="subhead">
+				<p>Read the latest SEO news</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+        <ul>
+			{% for publication in site.publications %}
+				<li>
+					<a href="{{ publication.link }}">
+						{{ publication.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
 
 {% include newsletters.html %}
 
 {% include organizations.html %}
 
-{% include resources.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2>Resources</h2>
+			<div class="subhead">
+				<p>Learn about SEO</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+        <ul>
+			{% for resource in site.resources %}
+				<li>
+					<a href="{{ resource.link }}">
+						{{ resource.title }}
+					</a>
+				</li>
+			{% endfor %}  
+		</ul>
+	</div>
+</div>
 
 {% include articles.html %}
 
-{% include conferences.html %}
+<hr>
+
+<div class="row">
+	<div class="four columns">
+		<div class="row">
+			<h2>Conferences</h2>
+			<div class="subhead">
+				<p>Learn, network, speak, and more</p>
+			</div>
+		</div>
+	</div>
+	<div class="eight columns">
+        <ul>
+			{% for conference in site.conferences %}
+				<li>
+					<a href="{{ conference.link }}">
+						{{ conference.title }}
+					</a>
+				</li>
+			{% endfor %}  
+		</ul>
+	</div>
+</div>
