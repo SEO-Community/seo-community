@@ -10,12 +10,14 @@
 		</div>
 	</div>
 	<div class="eight columns">
-        {% for conference in site.conferences %}
-        <li>
-            <a href="{{ conference.link }}">
-                {{ conference.title }}
-            </a>
-        </li>
-        {% endfor %}  
+        <ul>
+			{% for conference in site.conferences %}
+				<li>
+					<a href="{{ conference.link }}">
+						{{ conference.title }}
+					</a>
+				</li>
+			{% endfor %}  
+		</ul>
 	</div>
 </div>
