@@ -65,10 +65,7 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 		<ul>
 			{% for newsletter in site.newsletters %}
 				<li>
-					<a href="{{ newsletter.link }}">
-						{{ newsletter.title }}
-					</a>: 
-					{{ newsletter.description }}
+					<a href="{{ newsletter.link }}">{{ newsletter.title }}</a>: {{ newsletter.description }}
 				</li>
 			{% endfor %}  
 		</ul>
@@ -90,10 +87,7 @@ description: Welcome to the SEO Community. This is a public domain project, a fr
 		<ul>
 			{% for organization in site.organizations %}
 				<li>
-					<a href="{{ organization.link }}">
-						{{ organization.title }}
-					</a>: 
-					{{ organization.description }}
+					<a href="{{ organization.link }}">{{ organization.title }}</a>: {{ organization.description }}
 				</li>
 			{% endfor %}  
 		</ul>
