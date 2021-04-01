@@ -1,4 +1,4 @@
 ---
 title: The Technical SEO Renaissance
-link: hhttps://moz.com/blog/the-technical-seo-renaissance
+link: https://moz.com/blog/the-technical-seo-renaissance
 ---
